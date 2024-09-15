@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { backendurl } from '../../Api';
 
 function NewsFeed({ searchParams }) {
   const [articles, setArticles] = useState([]);
@@ -9,7 +10,7 @@ function NewsFeed({ searchParams }) {
     const fetchNews = async () => {
       const { q, lang, country, page } = searchParams;
       try {
-        const response = await axios.get('http://localhost:5000/api/news', {
+        const response = await axios.get(`https://news-app-backend-mg4r.vercel.app/api/news`, {
           params: { q, lang, country, page },
         });
         setArticles(response.data.articles);

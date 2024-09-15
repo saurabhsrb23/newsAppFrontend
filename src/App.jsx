@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>News App</h1>
+    <h1 class="text-4xl font-bold text-gray-900 my-4">News Application</h1>
       <SearchBar onSearch={handleSearch} />
       <NewsFeed searchParams={searchParams} />
       <Pagination currentPage={searchParams.page} onPageChange={handlePageChange} />

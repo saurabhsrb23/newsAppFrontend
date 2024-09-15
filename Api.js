@@ -1,0 +1,1 @@
+export const backendurl='https://news-app-backend-mg4r.vercel.app/api/'

@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "news-app-gnews"
-  }
+    "default": "news-app-gnews",
+    "newsapp": "news-app-3fb13"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
